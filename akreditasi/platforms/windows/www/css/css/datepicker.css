@@ -1,0 +1,101 @@
+﻿/**************************************************************************************
+	htmlDatePicker CSS file
+	
+	Feel Free to change the fonts, sizes, borders, and colours of any of these elements
+***************************************************************************************/
+/* The containing DIV element for the Calendar */
+#dpCalendar {
+	display: none;					/* Important, do not change */
+	position: absolute;				/* Important, do not change */
+	color: black;
+	font-size: 10px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	width: auto;
+	line-height: normal;
+}
+/* The table of the Calendar */
+#dpCalendar table {
+	border: 1px solid #CCCCCC; border-radius:3px; padding:3px;
+	background-color: #F8F8F8;
+	color: black;
+	font-size: 10px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+/* The Next/Previous buttons */
+#dpCalendar .cellButton {
+	color: black;
+	text-align: center;
+}
+#dpCalendar .cellButton:hover {
+	background-color: #e8edff;
+	color:black;
+}
+/* The Month/Year title cell */
+#dpCalendar .cellMonth {
+	color: black;
+	padding: 4px;
+	text-align: center;
+}
+/* Header Day Like S M T W T F S */
+#dpCalendar .cellHeadDay {
+	text-align:center;
+}
+/* Any regular day of the month cell */
+#dpCalendar .cellDay {
+	background-color: #e8edff;
+	color: black;
+	padding: 4px;
+	text-align: center;
+}
+#dpCalendar .cellDay:hover {
+	background-color: #FFFF66;
+}
+/* The day of the month cell that is selected */
+#dpCalendar .cellSelected {
+	border: 1px solid red;
+	background-color: #ffdddd;
+	color: black;
+	text-align: center;
+}
+/* The day of the month cell that is Today */
+#dpCalendar .cellToday {
+	border: 1px solid #17DD57;
+	background-color: #ddffdd;
+	color: black;
+	text-align: center;
+}
+/* The day of the month cell that is inside a valid Range */
+#dpCalendar .cellRange {
+	background-color: #ffccff;
+	color: black;
+	text-align: center;
+}
+/* Any cell in a month that is unused (ie: Not a Day in that month) */
+#dpCalendar .unused {
+	background-color: transparent;
+	color: black;
+}
+/* The Cancel/No Date button */
+#dpCalendar .cellCancel {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px; padding-bottom: 5px;
+}
+#dpCalendar .cellCancel:hover {
+	cursor:pointer;
+}
+/* The text inside the Cancel/No Date button */
+#dpCalendar .cellCancel:hover a {
+	color: black;
+}
+/* The clickable text inside the calendar */
+#dpCalendar a {
+	text-decoration: none;
+	background-color: transparent;
+	color: #669;
+	display: block;
+}
+#dpCalendar a:hover {
+	color: black;
+}

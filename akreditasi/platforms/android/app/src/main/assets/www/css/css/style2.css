@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.container2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerr {
+    width: 100%;
+    height: 70px;
+    background: #0099ff;
+}
+
+.headerr h2 {
+    padding-left: 20px;
+    color : #fff;
+    line-height: 70px;
+}
+
+.space {
+    height: 20px;
+}
