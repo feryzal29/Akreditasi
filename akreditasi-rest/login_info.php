@@ -11,7 +11,7 @@ if($data['login'] === true){
         'level' => @$_SESSION['level']
     );
 }
-
+header('Access-Control-Allow-Origin: *');
 header('conten-type:aplication/json');
 echo json_encode($data);
 ?>

@@ -8,7 +8,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true){
     $data['login'] = false;
 }
 
-
+header('Access-Control-Allow-Origin: *');
 header('conten-type:aplication/json');
 echo json_encode($data);
 ?>

@@ -326,20 +326,6 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">assignment</i>
-                            <span>PMKP</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li >
-                                <a href="#">Input PMKP</a>
-                            </li>
-                            <li>
-                               <a href="#">Laporan PMKP</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
@@ -722,82 +708,16 @@
     <!--Framework Input Data-->
     
     <script type='text/javascript'>
-        // $(function () {
-        //     'use strict';
-
-        //     $('#form-input').on('.submit', function (e) {
-        //         var form = $(this);
-
-        //         form.find('#messages').empty();
-
-        //         $.ajax({
-        //             type: "POST",
-        //             url: "http://localhost/akreditasi-rest/input.php",
-        //             data: form.serialize(),
-        //             dataType: "json",
-        //             success: function (response) {
-        //                 // alert("Selamat Datang Di Website Kami");
-        //                 if (response.status === 1) {
-        //                     var html = '<p>Berhasil</p>';
-
-        //                     form.find('#messages').html(html);
-        //                     form.find('input').val('');
-        //                 } else {
-        //                     var html = '';
-        //                     html += '<div class="alert alert-danger">';
-        //                     html += '<h6 class="alert-heading">Terdapat kesalahan</h6>';
-        //                     for (let i = 0; i < response.msg.length; i++) {
-        //                         html += '<div>'+response.msg[i]+'</div>';
-        //                     }
-        //                     html += '</div>';
-        //                     form.find('#messages').html(html);
-        //                 }
-        //             }
-        //         });
-
-        //         e.preventDefault();
-        //     });
-        // });
-
-
-        // $(document).ready(function(){
-        //     $(".simpan").on('submit',function (event) {
-        //         event.preventDefault();
-        //         $.ajax({
-        //             type: "POST",
-        //             url: "http://localhost/akreditasi-rest/input.php",
-        //             data: $(".form-input").serialize(),
-        //             dataType: "json",
-        //             success: function (response) {
-        //                 console.log(response);
-        //             }
-        //         });
-        //     });
-        // });
 
         function tambah(){
-        //   var vap=$("[name:'vap']").val();
-        //   var isk=$("[name:'isk']").val();
-        //   var plebitis=$("[name:'plebitis']").val();
-        //   var ilo=$("[name:'ilo']").val();
-        //   var ventilator=$("[name:'ventilator']").val();
-        //   var urine=$("[name:'urine']").val();
-        //   var infus=$("[name:'infus']").val();
-        //   var operasi=$("[name:'operasi']").val();
-        //   var mdro=$("[name:'mdro']").val();
-        //   var klb=$("[name:'klb']").val();
-        //   var kode=$("[name:'kode']").val();
-        //   var unit=$("[name:'unit']").val();
-        //   var tanggal=$("[name:'tanggal']").val();
           $.ajax({
             type:'POST',
-             //data:'vap='+vap+'&isk='+isk+'&plebitis='+plebitis+'&ilo='+ilo+'&ventilator='+ventilator+'&urine='+urine+'&infus='+infus+'&operasi='+operasi+'&mdro='+mdro+'&klb='+klb+'&kode='+kode+'&unit='+unit,
             data: $('#form-input').serialize(),
             url:'https://boboboy.000webhostapp.com/akreditasi-rest/input.php',
             dataType: 'json',
             success: function(hasil){
                 if(hasil){
-                    window.location = "http://localhost/akreditasi/www/pages/forms/inputppi.html"
+                    window.location = "inputppi.html"
                 }
 
             }
@@ -816,7 +736,7 @@
                 dataType: "json",
                 success: function (response) {
                     if(response["login"] === true){
-                        window.location = "http://localhost/akreditasi/www/login.html"
+                        window.location = "login.html"
                     }
                 }
             });

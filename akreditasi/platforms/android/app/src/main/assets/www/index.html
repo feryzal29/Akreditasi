@@ -309,20 +309,6 @@
                         <li>
                             <a href="javascript:void(0);" class="menu-toggle">
                                 <i class="material-icons">assignment</i>
-                                <span>PMKP</span>
-                            </a>
-                            <ul class="ml-menu">
-                                <li>
-                                    <a href="pages/forms/pmkprad.html">Radiologi</a>
-                                </li>
-                                <li>
-                                   <a href="#">Laporan PMKP</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="menu-toggle">
-                                <i class="material-icons">assignment</i>
                                 <span>PPI</span>
                             </a>
                             <ul class="ml-menu">
@@ -667,7 +653,7 @@
                 dataType: "json",
                 success: function (response) {
                     if(response["login"] === true){
-                        window.location = "http://localhost/akreditasi/www/login.html"
+                        window.location = "login.html"
                     }
                 }
             });
@@ -680,7 +666,7 @@
                     success: function (response) {
                         
                         if(response["login"] === false){
-                            window.location = "http://localhost/akreditasi/www/login.html"
+                            window.location = "login.html"
                         }
                     }
                 });
@@ -688,7 +674,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "http://localhost/akreditasi-rest/dashboard.php",
+                url: "https://boboboy.000webhostapp.com/akreditasi-rest/dashboard.php",
                 dataType: "json",
                 success: function (response) {
                     var kode = response[0];

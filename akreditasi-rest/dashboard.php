@@ -24,6 +24,7 @@ for ($i=0; $i < $code_list_count; $i++) {
 
 $json[] = $codes;
 
+header('Access-Control-Allow-Origin: *');
 header('content-type: application/json');
 echo json_encode($json);
 

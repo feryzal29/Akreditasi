@@ -39,6 +39,6 @@ if (!empty($validation) && !in_array(false, $validation)) {
         $respond['msg'][] = "Username atau Password salah!";
     }
 }
-
+header('Access-Control-Allow-Origin: *');
 header('conten-type:aplication/json');
 echo json_encode($respond);
